@@ -1,2 +1,2 @@
-# EPAM-tests
+# EPAMtests Java
 Final project 
