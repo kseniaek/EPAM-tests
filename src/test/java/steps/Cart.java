@@ -12,7 +12,7 @@ import java.util.List;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
-
+/*
 public class Cart extends Locators {
     @И("Пользователь хочет добавить")
     public void пользовательХочетДобавить(DataTable dataTable) {
@@ -43,3 +43,4 @@ public class Cart extends Locators {
         sleep(5000);
     }
 }
+*/

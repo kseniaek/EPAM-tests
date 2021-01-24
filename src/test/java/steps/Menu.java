@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
-
+/*
 public class Menu extends Locators {
     @И("Пользователь нажимает пункт верхнего меню {string}")
     public void пользовательНажимаетПунктВерхнегоМеню(String elementText) {
@@ -33,7 +33,7 @@ public class Menu extends Locators {
 
             /*String cartCount =$(By.xpath("//a[@class='cart']/span[@class='count']")).getText();
             int count = Integer.parseInt(cartCount);
-            System.out.println(count);*/
+            System.out.println(count);
 
             String elementText = table.get(i).get(0);
             System.out.println(elementText);
@@ -45,7 +45,7 @@ public class Menu extends Locators {
             /*String cartCountAfter = $("count").getText();
             int count2 = Integer.parseInt(cartCount);
             System.out.println(count2);
-            Assert.assertTrue(count+1==count2);*/
+            Assert.assertTrue(count+1==count2);
         }
 
 
@@ -53,3 +53,4 @@ public class Menu extends Locators {
     }
 
 }
+*/

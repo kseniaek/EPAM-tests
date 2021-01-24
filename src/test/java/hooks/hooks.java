@@ -1,7 +1,6 @@
 package hooks;
 
 import config.ServerConfig;
-import gherkin.formatter.model.Scenario;
 import io.cucumber.java.*;
 import io.cucumber.plugin.event.Node;
 import io.cucumber.plugin.event.Step;
@@ -25,18 +24,12 @@ import java.util.concurrent.TimeUnit;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Hooks {
 
-
+public class hooks {
     @Before
-    public void setUp(){
+    public void setUp(Scenario scenario){
 
         System.out.println("Запуск нового сценария");
-
-        //WebDriverWait wait;
-        Logger logger = LogManager.getLogger(Hooks.class);//подключили логгер
-        ServerConfig cfg = ConfigFactory.create(ServerConfig.class);//теперь можно использовать owner
-
 
         WebDriverManager.chromedriver().setup();//используем WebDriverManager
         //WebDriver driver = new ChromeDriver();
@@ -44,8 +37,10 @@ public class Hooks {
 
         //logger.info("Драйвер инициализирован");
 
+        System.out.println("Запуск выполнения сценария: " + scenario.getName());
+
         //open("https://github.com/");
-        open(cfg.url());
+        //open(cfg.url());
         //logger.info("Открыта страница freshroll");
         //driver.manage().window().maximize();
     }
@@ -57,4 +52,3 @@ public class Hooks {
         System.out.println("Сценарий завершен");
     }
 }
-

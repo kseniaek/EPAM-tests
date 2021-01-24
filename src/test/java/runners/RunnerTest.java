@@ -1,4 +1,5 @@
 package runners;
+
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -28,10 +29,6 @@ import java.util.concurrent.TimeUnit;
 //        name = "^Успешное|Успешная.*"
 )
 
-public class MainRunnerTest {
+public class RunnerTest {
 
 }
-
-
-
-

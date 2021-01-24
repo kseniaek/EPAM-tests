@@ -1,7 +1,7 @@
 
 #@withdrawal
-Function: Events
-
+Feature: Events
+@test
   Scenario: Просмотр предстоящих мероприятий
 Given main page open
   When User navigates to the "events" tab
