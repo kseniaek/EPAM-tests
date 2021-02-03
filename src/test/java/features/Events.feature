@@ -1,21 +1,21 @@
 
 #@withdrawal
 Feature: Events
-@test
+
   Scenario: Просмотр предстоящих мероприятий
 Given main page open
-  When User navigates to the "events" tab
-  And User clicks on "Upcoming Events" button
-  Then Page displays cards
-  | upcoming events |
+  When User navigates to the "Events" tab
+  And User clicks on "Upcoming events" button
+ # Then Page displays cards
+ # | upcoming events |
   Then Number of cards is equal to the counter on the "Upcoming Events" button
 
 Scenario: Просмотр карточек мероприятий
 Given main page open
-When User navigates to the "events" tab
-And User clicks on "Upcoming Events" button
-Then Page displays cards
-| upcoming events |
+When User navigates to the "Events" tab
+And User clicks on "Upcoming events" button
+#Then Page displays cards
+#| upcoming events |
 Then The card contains information about the event
   | venue                   |1|
   | language                |2|
@@ -27,7 +27,7 @@ Then The card contains information about the event
 
 Scenario: Валидация дат предстоящих мероприятий
 Given main page open
-When User navigates to the "events" tab
+When User navigates to the "Events" tab
 And User clicks on "Upcoming Events" button
 Then Page displays cards
 | upcoming events |
@@ -37,7 +37,7 @@ Then Dates are within the current week
 
 Scenario: Просмотр прошедших мероприятий в Канаде
 Given main page open
-When User navigates to the "events" tab
+When User navigates to the "Events" tab
 And User clicks on "Past Events" button
   Then The user clicks on "Location" in the filter box and selects "Canada" in the dropdown
 Then Page displays cards
@@ -46,7 +46,7 @@ Then Number of cards is equal to the counter on the "Past Events" button
 
 Scenario: Просмотр предстоящих мероприятий
 Given main page open
-When User navigates to the "events" tab
+When User navigates to the "Events" tab
 And User clicks on "Upcoming Events" button
   And User clicks on "any" card
   Then Goes to a page with detailed information about the event
